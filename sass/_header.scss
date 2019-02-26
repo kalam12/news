@@ -1,0 +1,34 @@
+#bg-imgs{
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($primary-color,$bg-opacity);
+    z-index: -1;
+  }
+}
+
+#home{
+  overflow: hidden;
+h1.lg-heading{
+  font-size: 6rem;
+  margin-top: 20vh;
+  
+}
+
+h2.sm-heading{
+  margin-bottom: 2rem;
+  padding: 0.2rem;
+  background: lighten($primary-color, 2)
+}
+
+
+
+}
+

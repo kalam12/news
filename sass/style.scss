@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,600i,700,800|Playfair+Display:400,700,900');
+$font: 'Montserrat', sans-serif;
+$primary-color:#444;
+$secondary-color: #eec;
+$show-home-img:true;
+$bg-opacity: 0.9;
+*{
+	box-sizing: border-box;
+}
+@mixin easeOut() {
+ transition: all 0.5s ease-out;	
+}
+.btn-line:nth-child(1) {
+    background: red;
+}
+
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+header{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
+.text-secondary{
+  color: $secondary-color;
+}
+main{
+	padding: 5rem;
+	height: 100%;
+
+	.icon{
+		margin-top: 1rem;
+		a{
+			padding: 0.4rem;
+
+			&:hover{
+				color: #E9C726;
+                @include easeOut();
+			}
+		}
+	}
+}
+//heading
+h1,
+h2,
+h3{
+	margin:0;
+	font-weight: 400;
+
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	background: $primary-color;
+	height: 100%;
+	margin:0;
+	line-height: 1.5;
+}
+
+
+@import "variables";
+@import "header";
+@import "menu";
+@import "config";
+@import "mobile";
+@import "slider";
+@import "service";
+@import "why-choose";
+@import "pricing";
+@import "gallery";
+@import "appointment";
+@import "testimonial";
+@import "blog";
+@import "footer";
